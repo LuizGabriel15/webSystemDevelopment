@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sla - Serviço de Streaming</title>
 
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 
 </head>
@@ -13,6 +13,7 @@
     
     <header class="header">
         <div class="container">
+            <div class="overlay" data-overLay></div>
             <a href="index.html" class="logo">
                 <img src="assets/img/projectLogo.png" alt="Sla">
             </a>
@@ -31,24 +32,23 @@
                         <option value="en">EN</option>
                         <option value="es">ES</option>
                     </select>
-                    
                 </div>
+
+                <button class="btn btn-primary">Entrar</button>
             </div>
 
-            <button class="btn btn-primary">Entrar</button>
-
-            <button class="btn-mobile">
-                <ion-icon name="menu"></ion-icon>
+            <button class="btn-mobile" data-menu-open>
+                <ion-icon name="reorder-three"></ion-icon>
             </button>
 
-            <nav class="navbar">
+            <nav class="navbar" data-navbar>
                 <div class="nav-top">
                    
                     <a href="index.html">
                         <img src="assets/img/projectLogo.png" alt="logo"/>
                     </a>
 
-                    <button class="menu-close">
+                    <button class="menu-close" data-menu-close>
                         <ion-icon name="close"></ion-icon>
                     </button>
 
